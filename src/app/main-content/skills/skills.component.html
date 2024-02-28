@@ -1,0 +1,27 @@
+<div id="skills" class="skills-wrapper">
+    <div class="skills-leftWrapper">
+
+        @for(skill of skillset; track skill.skill_name) {
+            <div class="skill">
+                <img src="assets/img/{{ skill.skill_icon }}" (mouseover)="onMouseOver($event)">
+                <div class="skill-name">{{ skill.skill_name }}</div>
+            </div>
+        }
+
+        <img class="skills-orangeShadow" src="assets/img/orange1.png">
+
+    </div>
+
+    <div class="skills-rightWrapper">
+
+        <div class="mySkills-header">
+            <h2>My skills</h2>
+            <div class="skills-redLine"></div>
+        </div>
+        <div class="skills-text-and-button">
+            <div class="skills-text">Hab viel gecodet und dazu gelernt, sodass ich nun verschieden Technologien behhersche bla bla bla bla bla.</div>
+            <a class="skills-button">Get in touch</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,33 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 100px 37px 100px;
+    background-color: #141D2F;
+    z-index: 999;
+
+    .logo {
+        width: 150px;
+        height: 35px;
+        color: white;
+    }
+
+    nav a {
+        color: #FFFFFF;
+        font-size: 23px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 46px;
+        cursor: pointer;
+
+        &:hover {
+            color: #FA7902;
+        }
+    }
+}
+

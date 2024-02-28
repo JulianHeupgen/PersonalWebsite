@@ -1,0 +1,105 @@
+.atf-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:  #141D2F;
+    padding: 0 100px 0 100px;
+}
+
+.left-section {
+    width: 40%;
+    height: 40%;
+    position: relative;
+
+    .atf-shadows {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 850px;
+        height: 680px; 
+        z-index: 1;
+     }
+
+    .personal-image1 {
+        position:absolute;
+        top: 0;
+        left: -600px;
+        width: 450px;
+        height: 570px; 
+        z-index: 2;
+        animation: slideFromLeft 0.6s forwards;
+
+        @keyframes slideFromLeft {
+            0% {
+              left: -600px; 
+            }
+            100% {
+              left: calc(40%/2); 
+            }
+          }
+    }
+}
+
+
+.right-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .welcome {
+        display: flex;
+        position: absolute;
+        right: -700px; 
+        margin-right: 100px;
+        animation: slideFromRight 0.6s forwards; 
+
+        @keyframes slideFromRight {
+            0% {
+                right: -700px; 
+            }
+            100% {
+                right: 0;  
+            }
+        }
+          
+        .iAm-text {
+            transform: rotate(-90deg); 
+            font-size: 69px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 86px;
+            color: white;
+        }
+
+        .title {
+            font-weight: 400;
+            font-size: 57px;
+            color: #FF4747;
+        }
+    }
+ }
+
+
+ .lets-talk-button {
+    margin-top: 250px;
+    background-color: #FA7902;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #FF4747;
+        transform: scale(1.125);
+    }
+ }
+

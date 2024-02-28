@@ -1,0 +1,81 @@
+.aboutMe-wrapper {
+    width: 100%;
+    display: flex;
+    color: white;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+
+    .aboutMe-leftSection {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px 0 100px;
+        margin-top: 150px;
+
+        h2 {
+            font-size: 100px;
+            font-weight: 700;
+            margin-block-start: 15px;
+            margin-block-end: 20px;
+        }
+
+        .personal-introduction {
+            width: 630px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .bulp-section, .puzzle-section {
+            width: 630px;
+            display: flex;
+            align-items: center;
+            margin-top: 45px;
+            font-size: 18px;
+
+            img {
+                height: 45px;
+                width: 45px;
+                padding: 12px;
+                transition: transform 0.1s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.18);
+                }
+            }
+        }
+    }
+
+
+    .aboutMe-rightSection {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 153px;
+
+        .aboutMe-personalImage {
+            height: 460px;
+            width: 460px;
+            border-radius: 100%;
+            border: 5px solid #FA7902;
+            object-fit: cover;
+        }
+
+        .orangeLine {
+            height: 4px;
+            width: 380px;
+            background-color: #FA7902;
+        }
+
+        .aboutMe-redShadow {
+            position: absolute;
+            top: -160px;
+            right: -260px;
+            height: 700px;
+            width: 600px;
+        }
+    }
+
+}
+
