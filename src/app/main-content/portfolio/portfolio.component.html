@@ -15,5 +15,9 @@
 
         <div class="projects-wrapper">
             
+          @for(singleproject of projects; track singleproject.title; let i = $index) {
+            <app-singleproject [project]="singleproject"></app-singleproject>
+          }
+
         </div>
 </div>
