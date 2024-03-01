@@ -32,5 +32,10 @@ export class PortfolioComponent {
 
   ];
 
+
+  getClassByIndex(index: number): string {
+    return index % 2 == 0 ? "row" : "row-reverse";
+  }
+
 }
 
