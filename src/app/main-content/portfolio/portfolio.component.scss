@@ -53,6 +53,15 @@
         display: flex;
         flex-direction: column;
         padding: 0 100px 0 100px;
+        position: relative;
+
+        .portfolio-redShadow {
+            height: 700px;
+            width: 700px;
+            position: absolute;
+            top: 950px;
+            left: -100px;
+        }
     }
 }
 
@@ -63,6 +72,7 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    z-index: 998;
 }
 
 .row-reverse {
@@ -70,5 +80,6 @@
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
+    z-index: 998;
 }
 
