@@ -1,9 +1,15 @@
-<img src="assets/img/{{ project.image }}">
+<img class="project-image" src="assets/img/{{ project.image }}">
 <div>
     <div class="project-title">{{ project.title }}</div>
     <div class="project-technologies"> 
-
-        
-
+        <ng-container *ngFor="let technology of project.technologies; let last = last">
+            {{ technology }}
+            <span *ngIf="!last"> | </span>
+        </ng-container>
+    </div>
+    <div class="project-description">{{ project.description }}</div>
+    <div>
+        <a href="{{ project.liveTest_link }}" class="livetest-link">Live test</a>
+        <a href="{{ project.gitHub_link }}" class="github-link">Github</a>
     </div>
 </div>

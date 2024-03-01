@@ -1,10 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-singleproject',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './singleproject.component.html',
   styleUrl: './singleproject.component.scss'
 })
