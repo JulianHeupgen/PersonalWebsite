@@ -8,7 +8,7 @@ footer {
     z-index: 999;
     border-top: 4px solid #FA7902;
 
-    .logo-and-imprint {
+    .logo-and-legal-div {
         display: flex;
         flex-direction: column;
 
@@ -17,12 +17,27 @@ footer {
             height: 45px;
         }
 
-        a {
-            padding: 0 0 0 7px;
-            font-size: 15px;
-            font-weight: 400;
-            color: white;
-            text-decoration: none;
+        .legal-div {
+            display: flex;
+
+            a {
+                padding: 0 0 0 7px;
+                font-size: 15px;
+                font-weight: 400;
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #FF4747;
+                }
+            }
+
+            span {
+                padding: 0 0 0 7px;
+                font-size: 15px;
+                font-weight: 400;
+            }
         }
     }
 
