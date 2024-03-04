@@ -1,11 +1,50 @@
 footer {
     height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 100px 0 100px;
     color: white;
     z-index: 999;
     border-top: 4px solid #FA7902;
+
+    .logo-and-imprint {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 150px;
+            height: 45px;
+        }
+
+        a {
+            padding: 0 0 0 7px;
+            font-size: 15px;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .copyright {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .socialMedia-footer {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 35px;
+            transition: transform 0.15s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.4);
+        }
+        }
+    }
+
 }
 

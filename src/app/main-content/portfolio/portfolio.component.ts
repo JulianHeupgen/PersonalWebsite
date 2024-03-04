@@ -35,7 +35,7 @@ export class PortfolioComponent {
       description: "My personal homepage. Showing you some of my newest projects. Of course you can test them by clicking on the button below !",
       liveTest_link: "https://google.de",
       gitHub_link: "https://github.com/JulianHeupgen/personalWebsite",
-      image: "simpleCRM.png"
+      image: "personalWebsite.png"
     },
 
   ];
