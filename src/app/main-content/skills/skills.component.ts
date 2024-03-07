@@ -67,5 +67,19 @@ export class SkillsComponent {
   }
 
 
+  scrollToContactSection() {
+    let contactSection = document.getElementById('contact');
+    if (contactSection) {
+     let targetY = contactSection.getBoundingClientRect().top + window.scrollY;
+
+     window.scrollTo({
+       top: targetY,
+       behavior: 'smooth'
+     });
+    }
+    setTimeout(this.scrollToContactSection, 500);
+  }
+
+
 }
 

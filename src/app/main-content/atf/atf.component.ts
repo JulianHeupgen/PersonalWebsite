@@ -9,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AtfComponent {
 
+  scrollToContactSection() {
+      let contactSection = document.getElementById('contact');
+      if (contactSection) {
+       let targetY = contactSection.getBoundingClientRect().top + window.scrollY;
+
+       window.scrollTo({
+         top: targetY,
+         behavior: 'smooth'
+       });
+      }
+      setTimeout(this.scrollToContactSection, 500);
+  }
 
 }
 
