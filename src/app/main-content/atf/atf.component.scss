@@ -27,7 +27,7 @@
         width: 620px;
         height: 780px; 
         z-index: 2;
-        animation: slideFromLeft 2s forwards;
+        animation: slideFromLeft 1s forwards;
 
         @keyframes slideFromLeft {
             0% {
@@ -54,7 +54,7 @@
         position: absolute;
         right: -700px; 
         margin-right: 100px;
-        animation: slideFromRight 2s forwards; 
+        animation: slideFromRight 1s forwards; 
 
         @keyframes slideFromRight {
             0% {

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SingleprojectComponent } from './singleproject/singleproject.component';
 import { CommonModule } from '@angular/common';
+import { InViewportModule } from 'ng-in-viewport';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule, SingleprojectComponent],
+  imports: [CommonModule, SingleprojectComponent, InViewportModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

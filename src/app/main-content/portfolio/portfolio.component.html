@@ -16,7 +16,14 @@
         <div class="projects-wrapper">
             
           @for(singleproject of projects; track singleproject.title; let i = $index) {
+
+            @defer (on viewport) {
             <app-singleproject [project]="singleproject" [ngClass]="getClassByIndex(i)"></app-singleproject>
+            }
+
+            @placeholder {
+              <p></p>
+            }
           }
 
           <img class="portfolio-redShadow" src="assets/img/red4.png">

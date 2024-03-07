@@ -48,7 +48,6 @@
         }
     }
 
-
     .projects-wrapper {
         display: flex;
         flex-direction: column;
@@ -66,13 +65,14 @@
 }
 
 
-
 .row {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
     z-index: 998;
+    transform: translateX(+100%);
+    animation: slideInRow ease-in-out 1s forwards;
 }
 
 .row-reverse {
@@ -81,5 +81,25 @@
     justify-content: start;
     align-items: center;
     z-index: 998;
+    transform: translateX(-100%);
+    animation: slideInRowReverse ease-in-out 1s forwards;
+}
+
+@keyframes slideInRow {
+    0% {
+      transform: translateX(+100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRowReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }
 

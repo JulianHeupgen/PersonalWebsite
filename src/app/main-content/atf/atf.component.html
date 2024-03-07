@@ -1,16 +1,26 @@
 <div class="atf-div">
     <div class="left-section">
         <img class="atf-shadows" src="assets/img/redAndOrange.png">
-        <img class="personal-image1" src="assets/img/personal_image1.png">
+        @defer (on viewport) {
+          <img class="personal-image1" src="assets/img/personal_image1.png">
+        }
+        @placeholder {
+          <p></p>
+        }
     </div>
     <div class="right-section">
-      <div class="welcome">
-          <div class="iAm-text">I am</div>
-          <div>
+        @defer (on viewport) {
+          <div class="welcome">
+            <div class="iAm-text">I am</div>
+            <div>
               <div class="name">Julian Heupgen</div>
               <div class="title">FRONTEND DEVELOPER</div>
+            </div>
           </div>
-      </div>
-      <a class="lets-talk-button">Let's Talk !</a>
+        }
+        @placeholder {
+            <p></p>
+        }
+          <a class="lets-talk-button">Let's Talk !</a>
     </div>
 </div>
