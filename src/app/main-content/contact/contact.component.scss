@@ -21,10 +21,9 @@
 }
 
 .contact-main-div {
-    width: 100%;
     display: flex;
     padding: 0 100px 0 100px;
-    margin-top: 25px;
+    margin: 25px 0 25px 0;
     color: white;
 
     .contact-left-section {
@@ -43,6 +42,74 @@
 
     .contact-right-section {
         width: 50%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 750px;
+
+            .input {
+                padding: 17px;
+                margin-top: 40px;
+                border: 1px solid #FF4747;
+                border-radius: 11px;
+                background-color: #141D2F;
+                color: white;
+                font-size: 17px;
+                font-family: 'Poppins';
+
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid #FA7902;
+                }
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: white;
+                font-size: 17px;
+            }
+
+            .message {
+                height: 160px;
+                resize: none;
+            }
+
+            .privacyPolicy_div {
+                display: flex;
+                margin-top: 25px;
+
+                .checkbox {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+                
+                label {
+                    margin-left: 10px;
+
+                    a {
+                        color: #FF4747;
+                        text-decoration: none;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .submitButton_div {
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+
+                button {
+                    width: 300px;
+                    padding: 16px;
+                }
+            }
+
+        }
     }
 }
 
