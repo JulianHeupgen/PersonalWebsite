@@ -19,7 +19,7 @@ export class PortfolioComponent {
       technologies: ["HTML", "CSS", "JavaScript"],
       description: "Task manager inspired by the Kanban System. Create and organize tasks by using drag and drop functions, assign users and categories.",
       liveTest_link: "https://google.de",
-      gitHub_link: "https://github.com/JulianHeupgen/JOIN",
+      gitHub_link: "https://github.com/JulianHeupgen/JOIN-KanbanBoard",
       image: "join.png"
     },
     {

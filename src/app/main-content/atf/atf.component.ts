@@ -12,7 +12,7 @@ export class AtfComponent {
   scrollToContactSection() {
       let contactSection = document.getElementById('contact');
       if (contactSection) {
-       let targetY = contactSection.getBoundingClientRect().top + window.scrollY;
+       let targetY = contactSection.getBoundingClientRect().top + window.scrollY -150;
 
        window.scrollTo({
          top: targetY,
