@@ -33,6 +33,14 @@
         font-weight: 400;
         color: white;
         cursor: pointer;
+
+        &:hover {
+            color: #FA7902;
+        }
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 
