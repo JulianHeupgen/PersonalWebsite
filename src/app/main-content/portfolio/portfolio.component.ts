@@ -33,7 +33,7 @@ export class PortfolioComponent {
     {
       title: "Personal Website",
       technologies: ["Angular"],
-      description: "My personal homepage. Showing you some of my newest projects. Of course you can test them by clicking on the button below !",
+      description: "My personal homepage, created with Angular. Showing you some of my newest projects. Of course you can test them by clicking on the button below !",
       liveTest_link: "https://google.de",
       gitHub_link: "https://github.com/JulianHeupgen/personalWebsite",
       image: "personalWebsite.png"
