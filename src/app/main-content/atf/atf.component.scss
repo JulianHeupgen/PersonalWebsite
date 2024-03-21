@@ -9,33 +9,34 @@
 .left-section {
     width: 40%;
     height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     position: relative;
 
     .atf-shadows {
         position: absolute;
-        top: 170px;
-        left: 0;
-        width: 900px;
-        height: 800px; 
+        top: 100px;
+        width: 780px;
+        height: 860px; 
         z-index: 1;
      }
 
     .personal-image1 {
-        position:absolute;
+        position: absolute;
         top: 145px;
-        left: -600px;
         width: 620px;
-        height: 780px; 
+        height: 790px; 
         z-index: 2;
         animation: slideFromLeft 1s forwards;
 
         @keyframes slideFromLeft {
             0% {
-              left: -600px; 
+                transform: translateX(-100%);
             }
 
             100% {
-              left: calc(40%/2); 
+                transform: translateX(0); 
             }
           }
     }
@@ -52,16 +53,15 @@
     .welcome {
         display: flex;
         position: absolute;
-        right: -700px; 
         margin-right: 100px;
         animation: slideFromRight 1s forwards; 
 
         @keyframes slideFromRight {
             0% {
-                right: -700px; 
+                transform: translateX(+100%);
             }
             100% {
-                right: 0;  
+                transform: translateX(0);  
             }
         }
           
