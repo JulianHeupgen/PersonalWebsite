@@ -9,10 +9,20 @@
       <div>Contact me through this form.<br>  If you believe I could be a valuable asset to your projects, I look forward to hearing from you!</div>
     </div>
     <div class="contact-right-section">
-      <form>
-        <input class="input" placeholder="Your name" type="text" required>
-        <input class="input" placeholder="Your email" type="email" required>
-        <textarea class="input message" placeholder="Your message" type="text" required></textarea>
+
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input [(ngModel)]="contactData.name" name="name" #name="ngModel" minlength="6" class="input" placeholder="Your name" type="text" required>
+        @if (!name.valid && name.touched) {
+          <span class="error-message">Your name is required</span>
+        }
+        <input [(ngModel)]="contactData.email" name="email" #email="ngModel" class="input" placeholder="Your email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        @if (!email.valid && email.touched) {
+          <span class="error-message">Your email is required</span>
+        }
+        <textarea [(ngModel)]="contactData.message" name="message" #message="ngModel" minlength="6" class="input message" placeholder="Your message" type="text" required></textarea>
+        @if (!message.valid && message.touched) {
+          <span class="error-message">Your message is empty</span>
+        }
         <div class="privacyPolicy_div">
           <input id="accept_policy" class="checkbox" type="checkbox" required>
           <label for="accept_policy">I've read the <a href="privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
@@ -21,6 +31,7 @@
           <button type="submit">Send message  :)</button>
         </div>
       </form>
+
     </div>
     <img class="contact-redShadow" src="assets/img/red1.png">
   </div>
@@ -28,3 +39,4 @@
     <a href="#atf"><img src="assets/img/goUp_button.png"></a>
   </div>
 </div>
+
