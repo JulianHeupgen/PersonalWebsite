@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -5,7 +6,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -19,6 +20,8 @@ export class ContactComponent {
     message: ""
   };
 
+  policyAccepted: boolean = false;
+
 
   post = {
     endPoint: 'http://julian-heupgen.de/sendMail.php',
@@ -31,12 +34,12 @@ export class ContactComponent {
     },
   };
 
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log("test");
             ngForm.resetForm();
           },
           error: (error) => {

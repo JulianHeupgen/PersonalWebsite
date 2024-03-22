@@ -140,11 +140,35 @@
         }
     }
 
+
     .error-message {
         font-size: 13px;
         padding-top: 8px;
         color: #FF4747;
     }
+
+    .invalid {
+        border: 2px solid red !important;        
+    }
+      
+    .valid {       
+        border: 2px solid rgb(18, 211, 18) !important;       
+    }
+
+    .activateButton {
+        background-color: #FA7902 !important;
+        transition: transform 0.15s ease-in-out !important;
+
+        &:hover {
+            cursor: pointer !important;
+            transform: scale(1.1) !important;
+        }
+    }
+
+    .disabledButton {
+        background-color: #B6B6B6 !important;
+    }
+
 
     .contact-redShadow {
         width: 700px;
