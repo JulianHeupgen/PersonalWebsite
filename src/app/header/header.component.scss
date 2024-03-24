@@ -46,3 +46,60 @@ header {
     }   
 }
 
+
+.mobileMenu {
+    display: none;
+
+    img {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+@media(max-width: 970px) {
+    nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+    }
+}
+
+@media(max-width: 660px) {
+    header {
+        padding: 22px 50px 22px 50px;
+    
+        img {
+            width: 180px;
+            height: 55px;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+
+    header {
+        padding: 22px 25px 22px 25px;
+
+        img { 
+        width: 140px;
+        height: 45px; 
+    }
+}
+
+    .mobileMenu img {
+        height: 25px;
+        width: 25px;
+        margin-bottom: 8px;
+    }
+}
+
