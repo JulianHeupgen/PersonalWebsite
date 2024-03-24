@@ -8,7 +8,14 @@
         <a href="#portfolio">Portfolio</a>
     </nav>
 
-    <div class="mobileMenu">
+    <div class="mobileMenu" (click)="toggleNavbar()">
       <img src="assets/img/burgerMenu.png">
     </div>
 </header>
+
+<div class="mobileNavbar" *ngIf="showNavbar">
+  <a href="#aboutMe" (click)="toggleNavbar()">About me</a>
+  <a href="#skills" (click)="toggleNavbar()">Skills</a>
+  <a href="#portfolio" (click)="toggleNavbar()">Portfolio</a>
+</div>
+
