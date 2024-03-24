@@ -9,7 +9,7 @@ header {
     align-items: center;
     padding: 32px 100px 32px 100px;
     background-color: #141D2F;
-    z-index: 999;
+    z-index: 998;
 
     img {
         width: 180px;
@@ -63,21 +63,25 @@ header {
 
 
 .mobileNavbar {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#7d8596;
+    background-color: rgba(25, 30, 51, 0.95);
+    z-index: 999;
     animation: fadeIn 0.2s forwards;
 
     a {
         color: #FFFFFF;
-        font-size: 23px;
+        font-size: 27px;
         font-weight: 400;
         text-decoration: none;
-        margin-top: 20px;
+        margin-bottom: 30px;
         cursor: pointer;
         position: relative;
 
@@ -99,7 +103,19 @@ header {
 
     a:hover::after {
         width: 100%; 
-    }   
+    }
+    
+    .closeButton {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        height: 35px;
+        width: 35px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 @keyframes fadeIn {

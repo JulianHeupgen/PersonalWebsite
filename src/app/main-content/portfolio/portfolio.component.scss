@@ -70,7 +70,7 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    z-index: 998;
+    z-index: 997;
     transform: translateX(+100%);
     animation: slideInRow ease-in-out 1s forwards;
 }
@@ -80,7 +80,7 @@
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
-    z-index: 998;
+    z-index: 997;
     transform: translateX(-100%);
     animation: slideInRowReverse ease-in-out 1s forwards;
 }
