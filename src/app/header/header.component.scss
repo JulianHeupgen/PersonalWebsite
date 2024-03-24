@@ -47,7 +47,7 @@ header {
 }
 
 
-.mobileMenu {
+.burgerMenu {
     display: none;
 
     img {
@@ -121,7 +121,7 @@ header {
         display: none;
     }
 
-    .mobileMenu {
+    .burgerMenu {
         display: flex;
     }
 }
@@ -148,7 +148,7 @@ header {
     }
 }
 
-    .mobileMenu img {
+    .burgerMenu img {
         height: 25px;
         width: 25px;
     }
