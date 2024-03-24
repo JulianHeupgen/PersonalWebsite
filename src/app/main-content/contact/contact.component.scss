@@ -210,39 +210,36 @@
 }
 
 @media(max-width: 1020px) {
-
     .headline-container h2 {
         font-size: 76px;
     }
 
     .contact-main-div {
         flex-direction: column;
-        width: 100%;
         padding: 0 100px 0 100px;
         position: relative;
     }
 
     .contact-left-section {
-        width: 90% !important;
-        max-width: 800px; 
+        width: 85% !important;
+        max-width: 900px; 
     }
 
     .contact-right-section {
-        width: 90% !important;
-        max-width: 800px; 
+        width: 85% !important; 
     }
 
     form {
         padding: 0;
-        width: 90% !important;
-        max-width: 800px !important;
+        width: 80% !important;
+        max-width: 850px !important;
     }
 
     .contact-redShadow {
-        height: 550px;
-        width: 700px;
-        left: -300px;
-        top: 500px !important;
+        height: 300px !important;
+        width: 320px !important;
+        left: -150px !important;
+        top: 640px !important;
     }
 }
 
