@@ -108,6 +108,7 @@
                 
                 label {
                     margin-left: 10px;
+                    font-size: 15px;
 
                     a {
                         color: #FF4747;
@@ -191,6 +192,57 @@
             cursor: pointer;
             filter: invert(49%) sepia(79%) saturate(1574%) hue-rotate(357deg) brightness(97%) contrast(103%);
         }
+    }
+}
+
+
+
+
+@media(max-width: 1470px) {
+    .contact-left-section {
+        max-width: 500px;
+    }
+
+    form {
+        padding-left: 50px;
+    }
+
+}
+
+@media(max-width: 1020px) {
+
+    .headline-container h2 {
+        font-size: 76px;
+    }
+
+    .contact-main-div {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 100px 0 100px;
+        position: relative;
+    }
+
+    .contact-left-section {
+        width: 90% !important;
+        max-width: 800px; 
+    }
+
+    .contact-right-section {
+        width: 90% !important;
+        max-width: 800px; 
+    }
+
+    form {
+        padding: 0;
+        width: 90% !important;
+        max-width: 800px !important;
+    }
+
+    .contact-redShadow {
+        height: 550px;
+        width: 700px;
+        left: -300px;
+        top: 500px !important;
     }
 }
 
