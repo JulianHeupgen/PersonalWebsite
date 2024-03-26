@@ -20,7 +20,7 @@
         width: 780px;
         height: 860px; 
         z-index: 1;
-     }
+    }
 
     .personal-image1 {
         position: absolute;
@@ -74,13 +74,13 @@
 
         .name {
             font-weight: 700;
-            font-size: 86px;
+            font-size: 76px;
             color: white;
         }
 
         .title {
             font-weight: 400;
-            font-size: 57px;
+            font-size: 53px;
             color: #FF4747;
         }
     }
@@ -104,4 +104,108 @@
         transform: scale(1.125);
     }
  }
+
+
+
+
+@media(max-width: 1670px) {
+    .left-section {
+        width: 45%;
+    }
+    .right-section {
+        width: 55%;
+    }
+    .welcome {
+        margin-right: 0 !important;
+    }
+}
+
+@media(max-width: 1615px) {
+    .left-section {
+        width: 40%;
+    }
+
+    .right-section {
+        width: 60%;
+    }
+
+    .atf-shadows {
+        top: 120px !important;
+        width: 700px !important;
+        height: 800px !important; 
+     }
+
+    .personal-image1 {
+        top: 180px !important;
+        width: 560px !important;
+        height: 740px !important;   
+    }
+
+    .welcome {
+        margin-top: 50px;
+    }
+
+    .iAm-text { 
+        font-size: 58px !important;
+    }
+
+    .name {
+        font-size: 68px !important;
+    }
+
+    .title {
+        font-size: 48px !important;
+    }
+}
+
+@media(max-width: 1530px) {
+    .personal-image1 {
+        left: 20px !important;
+    }
+
+    .atf-shadows {
+        left: -20px !important;
+        width: 600px !important;
+     }
+}
+
+@media(max-width: 1450px) {
+    .atf-div {
+        flex-direction: column;
+    }
+
+    .right-section {
+        width: 100%;
+        justify-content: center;
+        margin-top: 640px;
+    }
+
+    .personal-image1 {
+        left: -10px !important;
+        top: 125px !important;
+        width: 580px !important;
+        height: 670px !important;
+    }
+
+    .atf-shadows {
+        left: -180px !important;
+        width: 860px !important;
+        top: 100px !important;
+        height: 750px !important;
+     }
+
+    .lets-talk-button {
+        margin-top: 350px !important;
+    }
+}
+
+@media(max-width: 1345px) {
+    .personal-image1 {
+        left: -70px !important;
+    }
+
+    .right-section {
+        margin-top: 660px;
+    }
+}
 
