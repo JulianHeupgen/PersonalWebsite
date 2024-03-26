@@ -3,6 +3,7 @@
     display: flex;
     color: white;
     margin-bottom: 60px;
+    position: relative;
     overflow-x: hidden;
 
     .aboutMe-leftSection {
@@ -11,6 +12,7 @@
         flex-direction: column;
         padding: 0 100px 0 100px;
         margin-top: 150px;
+        z-index: 4;
 
         h2 {
             font-size: 100px;
@@ -60,12 +62,14 @@
             border-radius: 100%;
             border: 5px solid #FA7902;
             object-fit: contain;
+            z-index: 4;
         }
 
         .orangeLine {
+            width: 390px;
             height: 4px;
-            width: 380px;
             background-color: #FA7902;
+            z-index: 4;
         }
 
         .aboutMe-redShadow {
@@ -74,8 +78,202 @@
             right: -260px;
             height: 700px;
             width: 600px;
+            z-index: 3;
         }
     }
 
+    .aboutMe-redShadowMobile {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -260px;
+        height: 700px;
+        width: 600px;
+        z-index: 3;
+    }
+
+}
+
+
+
+@media(max-width: 1700px) {
+    .orangeLine {
+        width: 290px !important;
+    }
+}
+
+@media(max-width: 1600px) {
+    .orangeLine {
+        width: 230px !important;
+    }
+
+    .aboutMe-redShadow {
+        right: -290px !important;
+    }
+
+    h2 {
+        font-size: 80px !important;
+    }
+
+    .personal-introduction {
+        width: 580px !important;
+        font-size: 16px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 580px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media(max-width: 1390px) {
+    .aboutMe-personalImage {
+        height: 400px !important;
+        width: 400px !important;
+    }
+}
+
+@media(max-width: 1300px) {
+    .aboutMe-rightSection{
+        display: none !important;
+    }
+
+    .aboutMe-wrapper {
+        justify-content: center;
+    }
+
+    .aboutMe-leftSection {
+        width: 100% !important;
+    }
+
+    .aboutMe-redShadowMobile {
+        display: flex !important;
+    }
+
+    .personal-introduction {
+        font-size: 17px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        font-size: 17px !important;
+    }
+
+}
+
+@media(max-width: 1000px) {
+    h2 {
+        font-size: 68px !important;
+    }
+
+    .personal-introduction {
+        width: 480px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 480px !important;
+    }
+
+    .aboutMe-redShadowMobile {
+        top: 150px !important;
+        right: -260px !important;
+        height: 600px !important;
+        width: 580px !important;
+    }
+}
+
+@media(max-width: 690px) {
+    .aboutMe-leftSection {
+        padding: 0 50px 0 50px !important;
+    }
+
+    h2 {
+        font-size: 62px !important;
+    }
+
+    .personal-introduction {
+        width: 400px !important;
+        font-size: 16px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 400px !important;
+        font-size: 16px !important;
+    }
+
+    .aboutMe-redShadowMobile {
+        right: -290px !important;
+        height: 600px !important;
+        width: 560px !important;
+    }
+}
+
+@media(max-width: 530px) {
+    h2 {
+        font-size: 56px !important;
+    }
+
+    .personal-introduction {
+        width: 350px !important;
+        font-size: 14px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 350px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 480px) {
+    .aboutMe-leftSection {
+        padding: 0 25px 0 25px !important;
+    }
+
+    h2 {
+        font-size: 56px !important;
+    }
+
+    .personal-introduction {
+        width: 320px !important;
+        font-size: 13px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 320px !important;
+        font-size: 13px !important;
+    }
+
+    .aboutMe-redShadowMobile {
+        right: -310px !important;
+        height: 500px !important;
+        width: 500px !important;
+    }
+}
+
+@media(max-width: 400px) {
+    h2 {
+        font-size: 48px !important;
+    }
+
+    .personal-introduction {
+        width: 290px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 290px !important;
+    }
+}
+
+@media(max-width: 365px) {
+    h2 {
+        font-size: 44px !important;
+    }
+
+    .personal-introduction {
+        width: 250px !important;
+    }
+
+    .bulp-section, .puzzle-section {
+        width: 250px !important;
+    }
 }
 
