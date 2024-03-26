@@ -44,3 +44,25 @@
     }
 }
 
+
+
+@media(max-width: 900px) {
+    .redLine {
+        width: 55px !important;
+    }
+
+    .socialMedia-images {
+        margin: 0 10px 0 10px !important;
+    }
+
+    .email {
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width: 690px) {
+    .email {
+        display: none;
+    }
+}
+
