@@ -56,7 +56,6 @@
     .blue-atf-design{ 
         margin-top: -470px;
     }
-
     .socialMedia-section {
         margin-top: -160px;
     }
@@ -67,15 +66,12 @@
     .socialMedia-section {
         margin-top: -180px;
     }
-
     .redLine {
         width: 55px !important;
     }
-
     .socialMedia-images {
         margin: 0 10px 0 10px !important;
     }
-
     .email {
         font-size: 20px !important;
     }
@@ -85,9 +81,14 @@
     .blue-atf-design{ 
         margin-top: -520px;
     }
-
     .socialMedia-section {
         margin-top: -200px;
+    }
+}
+
+@media(max-width: 800px) and (max-height: 870px) {
+    .blue-atf-design{ 
+        margin-top: -480px;
     }
 }
 
@@ -95,9 +96,14 @@
     .blue-atf-design{ 
         margin-top: -575px;
     }
-
     .socialMedia-section {
         margin-top: -215px;
+    }
+}
+
+@media(max-width: 720px) and (max-height: 860px) {
+    .blue-atf-design{ 
+        margin-top: -525px;
     }
 }
 
@@ -111,9 +117,17 @@
     .blue-atf-design{ 
         margin-top: -630px;
     }
-
     .socialMedia-section {
-        margin-top: -260px;
+        margin-top: -220px;
+    }
+}
+
+@media(max-width: 620px) and (max-height: 915px) {
+    .blue-atf-design{ 
+        margin-top: -590px;
+    }
+    .socialMedia-section {
+        margin-top: -190px;
     }
 }
 
@@ -121,15 +135,83 @@
     .blue-atf-design{ 
         margin-top: -690px;
     }
-
     .socialMedia-section {
-        margin-top: -280px;
+        margin-top: -260px;
+    }
+}
+
+@media(max-width: 580px) and (max-height: 870px) {
+    .blue-atf-design{ 
+        margin-top: -645px;
+    }
+    .socialMedia-section {
+        margin-top: -240px;
     }
 }
 
 @media(max-width: 400px) {
     .blue-atf-design{ 
-        margin-top: -730px;
+        margin-top: -760px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 910px) {
+    .blue-atf-design{ 
+        margin-top: -720px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 875px) {
+    .blue-atf-design{ 
+        margin-top: -690px;
+    }
+    .socialMedia-section {
+        margin-top: -230px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 835px) {
+    .blue-atf-design{ 
+        margin-top: -660px;
+    }
+    .socialMedia-section {
+        margin-top: -260px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 795px) {
+    .blue-atf-design{ 
+        margin-top: -620px;
+    }
+    .socialMedia-section {
+        margin-top: -300px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 770px) {
+    .blue-atf-design{ 
+        margin-top: -590px;
+    }
+    .socialMedia-section {
+        margin-top: -310px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 745px) {
+    .blue-atf-design{ 
+        margin-top: -565px;
+    }
+    .socialMedia-section {
+        margin-top: -310px;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 700px) {
+    .blue-atf-design{ 
+        margin-top: -535px;
+    }
+    .socialMedia-section {
+        margin-top: -280px;
     }
 }
 
