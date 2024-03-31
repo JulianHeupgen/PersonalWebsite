@@ -18,7 +18,7 @@ export class PortfolioComponent {
       title: "Join",
       technologies: ["HTML", "CSS", "JavaScript"],
       description: "Task manager inspired by the Kanban System. Create and organize tasks by using drag and drop functions, assign users and categories.",
-      liveTest_link: "http://join.julian-heupgen.de/",
+      liveTest_link: "http://join.julian-heupgen.de/JOIN/html/index.html",
       gitHub_link: "https://github.com/JulianHeupgen/JOIN-KanbanBoard",
       image: "join.png"
     },
@@ -26,7 +26,7 @@ export class PortfolioComponent {
       title: "El Pollo Loco",
       technologies: ["HTML", "CSS", "JavaScript"],
       description: "A simple Jump N Run Game based on object oriented Programming. Help Pepe to collect coins and fight against chickens.",
-      liveTest_link: "http://elpolloloco.julian-heupgen.de/",
+      liveTest_link: "http://elpolloloco.julian-heupgen.de/elPolloLoco/index.html",
       gitHub_link: "https://github.com/JulianHeupgen/El-Pollo-Loco",
       image: "elpolloloco.png"
     },
