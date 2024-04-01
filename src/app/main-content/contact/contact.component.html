@@ -25,7 +25,7 @@
         }
         <div class="privacyPolicy_div">
           <input [(ngModel)]="policyAccepted" name="checkbox" id="accept_policy" class="checkbox" type="checkbox" required>
-          <label for="accept_policy">I've read the <a href="privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
+          <label for="accept_policy">I've read the <a routerLink="privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
         </div>
         <div class="submitButton_div">
           <button type="submit" [disabled]="!policyAccepted" [ngClass]="{ 'activateButton': contactForm.form.valid && policyAccepted, 'disabledButton': !contactForm.form.valid || !policyAccepted }">Send message  :)</button>
