@@ -36,7 +36,7 @@ export class PortfolioComponent {
       description: "Chat massenger inspired by Slack. Stay in contact with colleagues, keep up to date and share thoughts and ideas.",
       liveTest_link: "",
       gitHub_link: "",
-      image: "laptop.png"
+      image: "ComingSoon.png"
     },
 
   ];
