@@ -16,5 +16,45 @@ export class HeaderComponent {
     this.showNavbar = !this.showNavbar;
   }
 
-}
+
+  scrollToAboutMeSection() {
+    let aboutMeSection = document.getElementById('aboutMe');
+    if (aboutMeSection) {
+     let targetY = aboutMeSection.getBoundingClientRect().top + window.scrollY -30;
+
+     window.scrollTo({
+       top: targetY,
+       behavior: 'smooth'
+     });
+    }
+  }
+
+    
+    scrollToSkillsSection() {
+      let skillsSection = document.getElementById('skills');
+      if (skillsSection) {
+       let targetY = skillsSection.getBoundingClientRect().top + window.scrollY -110;
+  
+       window.scrollTo({
+         top: targetY,
+         behavior: 'smooth'
+       });
+      }
+    }
+
+
+    scrollToPortfolioSection() {
+      let portfolioSection = document.getElementById('portfolio');
+      if (portfolioSection) {
+       let targetY = portfolioSection.getBoundingClientRect().top + window.scrollY -140;
+  
+       window.scrollTo({
+         top: targetY,
+         behavior: 'smooth'
+       });
+      }
+    }
+
+  }
+
 
