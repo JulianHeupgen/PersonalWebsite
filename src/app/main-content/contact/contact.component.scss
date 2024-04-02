@@ -1,6 +1,7 @@
 .headline-container {
     display: flex;
     align-items: center;
+    max-width: 1920px;
 
     .redLine-contact-headline {
         width: 50px;
@@ -22,6 +23,7 @@
 
 .contact-main-div {
     display: flex;
+    max-width: 1920px;
     padding: 0 100px 0 100px;
     margin: 25px 0 25px 0;
     color: white;

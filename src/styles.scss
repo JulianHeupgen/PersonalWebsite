@@ -124,3 +124,11 @@ body {
     background-color:  #141D2F;
 }
 
+
+@media(min-width: 2100px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
