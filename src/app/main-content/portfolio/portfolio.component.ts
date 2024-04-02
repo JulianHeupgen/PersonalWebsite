@@ -31,12 +31,12 @@ export class PortfolioComponent {
       image: "elpolloloco.png"
     },
     {
-      title: "Personal Website",
-      technologies: ["Angular"],
-      description: "My personal homepage, created with Angular. Showing you some of my newest projects. Of course you can test them by clicking on the button below !",
-      liveTest_link: "http://julian-heupgen.de",
-      gitHub_link: "https://github.com/JulianHeupgen/PersonalWebsite",
-      image: "personalWebsite.png"
+      title: "DA Bubble",
+      technologies: ["HTML", "SCSS", "Typescript", "Angular", "Firebase"],
+      description: "Chat massenger inspired by Slack. Stay in contact with colleagues, keep up to date and share thoughts and ideas.",
+      liveTest_link: "",
+      gitHub_link: "",
+      image: "laptop.png"
     },
 
   ];
