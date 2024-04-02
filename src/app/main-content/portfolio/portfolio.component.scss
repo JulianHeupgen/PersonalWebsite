@@ -73,7 +73,7 @@
     align-items: center;
     z-index: 997;
     transform: translateX(+100%);
-    animation: slideInRow ease-in-out 1s forwards;
+    animation: slideInRow ease-in-out 0.5s forwards;
 }
 
 .row-reverse {
@@ -83,7 +83,7 @@
     align-items: center;
     z-index: 997;
     transform: translateX(-100%);
-    animation: slideInRowReverse ease-in-out 1s forwards;
+    animation: slideInRowReverse ease-in-out 0.5s forwards;
 }
 
 @keyframes slideInRow {

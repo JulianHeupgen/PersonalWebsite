@@ -19,7 +19,7 @@ export class AtfComponent {
          behavior: 'smooth'
        });
       }
-      setTimeout(this.scrollToContactSection, 500);
+      setTimeout(this.scrollToContactSection, 550);
   }
 
 }
