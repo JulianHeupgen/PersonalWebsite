@@ -12,14 +12,15 @@ export class AtfComponent {
   scrollToContactSection() {
       let contactSection = document.getElementById('contact');
       if (contactSection) {
-       let targetY = contactSection.getBoundingClientRect().top + window.scrollY -150;
+       let targetY = contactSection.getBoundingClientRect().top + window.scrollY -120;
 
        window.scrollTo({
          top: targetY,
          behavior: 'smooth'
        });
       }
-      setTimeout(this.scrollToContactSection, 550);
+      setTimeout(this.scrollToContactSection, 590);
+      setTimeout(this.scrollToContactSection, 800);
   }
 
 }

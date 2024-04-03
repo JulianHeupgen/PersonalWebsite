@@ -20,7 +20,7 @@ export class HeaderComponent {
   scrollToAboutMeSection() {
     let aboutMeSection = document.getElementById('aboutMe');
     if (aboutMeSection) {
-     let targetY = aboutMeSection.getBoundingClientRect().top + window.scrollY -30;
+     let targetY = aboutMeSection.getBoundingClientRect().top + window.scrollY;
 
      window.scrollTo({
        top: targetY,
@@ -46,7 +46,7 @@ export class HeaderComponent {
     scrollToPortfolioSection() {
       let portfolioSection = document.getElementById('portfolio');
       if (portfolioSection) {
-       let targetY = portfolioSection.getBoundingClientRect().top + window.scrollY -140;
+       let targetY = portfolioSection.getBoundingClientRect().top + window.scrollY -110;
   
        window.scrollTo({
          top: targetY,
