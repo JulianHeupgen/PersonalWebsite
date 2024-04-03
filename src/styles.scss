@@ -112,7 +112,37 @@
   }
 
 
- 
+
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-vertical {
+  width: 12px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #141D2F;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background-color: #FF4747; 
+    border: #141D2F 3px solid; 
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track:horizontal {
+  background: initial;
+}
+
+*::-webkit-scrollbar-thumb:horizontal {
+  background-color: initial; 
+  border: initial; 
+  border-radius: initial;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }  

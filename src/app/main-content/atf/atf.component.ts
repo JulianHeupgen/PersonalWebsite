@@ -20,7 +20,7 @@ export class AtfComponent {
        });
       }
       setTimeout(this.scrollToContactSection, 590);
-      setTimeout(this.scrollToContactSection, 800);
+      setTimeout(this.scrollToContactSection, 820);
   }
 
 }
