@@ -250,8 +250,8 @@
     .contact-redShadow {
         height: 300px !important;
         width: 320px !important;
-        left: -150px !important;
-        top: 640px !important;
+        left: -160px !important;
+        top: 665px !important;
     }
 
     .contact-orangeShadow {
@@ -274,9 +274,15 @@
     }
 }
 
+@media(max-width: 863px) {
+    .contact-redShadow {
+        top: 700px !important;
+    }
+}
+
 @media(max-width: 735px) {
     .contact-redShadow {
-        left: -200px !important;
+        left: -205px !important;
     }
 
     label {
@@ -379,6 +385,19 @@
             }
         }
     }
+}
+
+@media(max-width: 581px) {
+    .contact-redShadow {
+        top: 632px !important;
+    } 
+}
+
+@media(max-width: 515px) {
+    .contact-redShadow {
+        height: 260px !important;
+        top: 660px !important;
+    } 
 }
 
 @media(max-width: 500px) {
