@@ -119,6 +119,8 @@ header {
     }
 }
 
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -131,8 +133,6 @@ header {
 }
 
 
-
-
 @media(max-width: 970px) {
     nav {
         display: none;
@@ -142,6 +142,7 @@ header {
         display: flex;
     }
 }
+
 
 @media(max-width: 660px) {
     header {
@@ -153,6 +154,7 @@ header {
         }
     }
 }
+
 
 @media(max-width: 480px) {
 
@@ -172,8 +174,6 @@ header {
 }
 
 
-
-
 @media(min-width: 1920px) {
     header {
         left: 50%; 
@@ -182,4 +182,5 @@ header {
         max-width: 1700px;
     }
 }
+
 

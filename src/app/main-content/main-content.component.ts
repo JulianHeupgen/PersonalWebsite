@@ -6,6 +6,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 @Component({
   selector: 'app-main-content',
   standalone: true,
@@ -14,5 +15,6 @@ import { ContactComponent } from './contact/contact.component';
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
-
+  
 }
+
