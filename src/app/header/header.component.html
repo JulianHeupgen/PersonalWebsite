@@ -3,9 +3,9 @@
       <img src="assets/img/logo.png">
     </a>
     <nav>
-        <a (click)="scrollToAboutMeSection()">About me</a>
-        <a (click)="scrollToSkillsSection()">Skills</a>
-        <a (click)="scrollToPortfolioSection()">Portfolio</a>
+        <a href="#aboutMe">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
     </nav>
 
     <div class="burgerMenu" (click)="toggleNavbar()">
@@ -13,12 +13,12 @@
     </div>
 </header>
 
-<div class="mobileNavbar" *ngIf="showNavbar">
+<div data-aos="flip-right" class="mobileNavbar" *ngIf="showNavbar">
   <div class="closeButton">
     <img (click)="toggleNavbar()" src="assets/img/closeButton.png">
   </div>
-  <a (click)="toggleNavbar(); scrollToAboutMeSection()">About me</a>
-  <a (click)="toggleNavbar(); scrollToSkillsSection()">Skills</a>
-  <a (click)="toggleNavbar(); scrollToPortfolioSection()">Portfolio</a>
+  <a (click)="toggleNavbar()" href="#aboutMe">About me</a>
+  <a (click)="toggleNavbar();" href="#skills">Skills</a>
+  <a (click)="toggleNavbar();" href="#portfolio">Portfolio</a>
 </div>
 

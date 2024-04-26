@@ -75,7 +75,6 @@ header {
     align-items: center;
     background-color: rgba(25, 30, 51, 0.95);
     z-index: 999;
-    animation: fadeIn 0.2s forwards;
 
     a {
         color: #FFFFFF;
@@ -119,18 +118,6 @@ header {
     }
 }
 
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(+100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 
 @media(max-width: 970px) {
@@ -182,5 +169,4 @@ header {
         max-width: 1700px;
     }
 }
-
 

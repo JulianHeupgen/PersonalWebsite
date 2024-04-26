@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-header',
@@ -17,45 +18,9 @@ export class HeaderComponent {
     this.showNavbar = !this.showNavbar;
   }
 
+  ngOnInit() {
+    AOS.init();
+}
 
-  scrollToAboutMeSection() {
-    let aboutMeSection = document.getElementById('aboutMe');
-    if (aboutMeSection) {
-     let targetY = aboutMeSection.getBoundingClientRect().top + window.scrollY;
-
-     window.scrollTo({
-       top: targetY,
-       behavior: 'smooth'
-     });
-    }
-  }
-
-    
-    scrollToSkillsSection() {
-      let skillsSection = document.getElementById('skills');
-      if (skillsSection) {
-       let targetY = skillsSection.getBoundingClientRect().top + window.scrollY -110;
-  
-       window.scrollTo({
-         top: targetY,
-         behavior: 'smooth'
-       });
-      }
-    }
-
-
-    scrollToPortfolioSection() {
-      let portfolioSection = document.getElementById('portfolio');
-      if (portfolioSection) {
-       let targetY = portfolioSection.getBoundingClientRect().top + window.scrollY -110;
-  
-       window.scrollTo({
-         top: targetY,
-         behavior: 'smooth'
-       });
-      }
-    }
-
-  }
-
+}
 
