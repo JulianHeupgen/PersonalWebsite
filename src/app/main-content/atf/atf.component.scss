@@ -30,17 +30,6 @@
         width: 620px;
         height: 790px; 
         z-index: 2;
-        animation: slideFromLeft 1s forwards;
-
-        @keyframes slideFromLeft {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(0); 
-            }
-          }
     }
 }
 
@@ -56,16 +45,6 @@
         display: flex;
         position: absolute;
         margin-right: 100px;
-        animation: slideFromRight 1s forwards; 
-
-        @keyframes slideFromRight {
-            0% {
-                transform: translateX(+100%);
-            }
-            100% {
-                transform: translateX(0);  
-            }
-        }
           
         .iAm-text {
             transform: rotate(-90deg); 

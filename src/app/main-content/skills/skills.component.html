@@ -1,5 +1,5 @@
 <div id="skills" class="skills-wrapper">
-    <div class="skills-leftWrapper">
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="skills-leftWrapper">
 
         @for(skill of skillset; track skill.skill_name) {
             <div class="skill">
@@ -19,7 +19,8 @@
         </div>
         <div class="skills-text-and-button">
             <div class="skills-text">On my journey to becoming a Frontend Developer, I have learned various web technologies and successfully applied them in practical projects.</div>
-            <a class="skills-button" (click)="scrollToContactSection()">Get in touch</a>
+            <a class="skills-button" href="#contact">Get in touch</a>
         </div>
     </div>
 </div>
+

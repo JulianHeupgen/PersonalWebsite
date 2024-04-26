@@ -4,7 +4,7 @@
     <h2>Contact</h2>
   </div>
   <div class="contact-main-div">
-    <div class="contact-left-section">
+    <div data-aos="zoom-in-down" data-aos-duration="1200" class="contact-left-section">
       <h3>Searching for a Junior Developer?</h3>
       <div>Contact me through this form.<br>  If you believe I could be a valuable asset to your projects, I look forward to hearing from you!</div>
     </div>
@@ -28,7 +28,7 @@
           <label for="accept_policy">I've read the <a routerLink="privacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
         </div>
         <div class="submitButton_div">
-          <button type="submit" [disabled]="!policyAccepted" [ngClass]="{ 'activateButton': contactForm.form.valid && policyAccepted, 'disabledButton': !contactForm.form.valid || !policyAccepted }">Send message  :)</button>
+          <button data-aos="flip-left" data-aos-duration="1200" type="submit" [disabled]="!policyAccepted" [ngClass]="{ 'activateButton': contactForm.form.valid && policyAccepted, 'disabledButton': !contactForm.form.valid || !policyAccepted }">Send message  :)</button>
         </div>
       </form>
 

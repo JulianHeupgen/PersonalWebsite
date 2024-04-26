@@ -17,7 +17,7 @@
             
           @for(singleproject of projects; track singleproject.title; let i = $index) {
 
-            <app-singleproject data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500"
+            <app-singleproject data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2300"
              [project]="singleproject" [ngClass]="getClassByIndex(i)"></app-singleproject>
             
           }

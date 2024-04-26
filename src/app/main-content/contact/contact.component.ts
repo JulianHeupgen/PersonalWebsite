@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact',
@@ -12,6 +14,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  ngOnInit() {
+    AOS.init();
+  }
 
   http = inject(HttpClient);
 

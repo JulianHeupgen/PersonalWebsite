@@ -20,7 +20,7 @@ export class HeaderComponent {
 
   ngOnInit() {
     AOS.init();
-}
+  }
 
 }
 

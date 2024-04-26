@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-skills',
@@ -56,6 +58,10 @@ export class SkillsComponent {
   ];
 
 
+  ngOnInit() {
+    AOS.init();
+  }
+
 
   onMouseOver(event: MouseEvent) {
     const element = event.currentTarget as HTMLElement;
@@ -65,21 +71,6 @@ export class SkillsComponent {
       element.style.transform = 'translateY(0)'; 
     }, 100);
   }
-
-
-  scrollToContactSection() {
-    let contactSection = document.getElementById('contact');
-    if (contactSection) {
-     let targetY = contactSection.getBoundingClientRect().top + window.scrollY;
-
-     window.scrollTo({
-       top: targetY,
-       behavior: 'smooth'
-     });
-    }
-    setTimeout(this.scrollToContactSection, 500);
-  }
-
 
 }
 
