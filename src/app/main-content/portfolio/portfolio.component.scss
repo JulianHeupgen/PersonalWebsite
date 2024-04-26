@@ -73,8 +73,6 @@
     justify-content: end;
     align-items: center;
     z-index: 997;
-    transform: translateX(+100%);
-    animation: slideInRow ease-in-out 0.5s forwards;
 }
 
 .row-reverse {
@@ -83,28 +81,7 @@
     justify-content: start;
     align-items: center;
     z-index: 997;
-    transform: translateX(-100%);
-    animation: slideInRowReverse ease-in-out 0.5s forwards;
 }
-
-@keyframes slideInRow {
-    0% {
-      transform: translateX(+100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes slideInRowReverse {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-}
-
 
 
 

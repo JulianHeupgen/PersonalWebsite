@@ -17,16 +17,13 @@
             
           @for(singleproject of projects; track singleproject.title; let i = $index) {
 
-            @defer (on viewport) {
-            <app-singleproject [project]="singleproject" [ngClass]="getClassByIndex(i)"></app-singleproject>
-            }
-
-            @placeholder {
-              <p></p>
-            }
+            <app-singleproject data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500"
+             [project]="singleproject" [ngClass]="getClassByIndex(i)"></app-singleproject>
+            
           }
 
           <img class="portfolio-redShadow" src="assets/img/red4.png">
 
         </div>
 </div>
+

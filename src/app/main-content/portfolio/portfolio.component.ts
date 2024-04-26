@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { SingleprojectComponent } from './singleproject/singleproject.component';
 import { CommonModule } from '@angular/common';
 import { InViewportModule } from 'ng-in-viewport';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-portfolio',
@@ -40,6 +42,11 @@ export class PortfolioComponent {
     },
 
   ];
+
+
+  ngOnInit() {
+        AOS.init();
+  }
 
 
   getClassByIndex(index: number): string {
