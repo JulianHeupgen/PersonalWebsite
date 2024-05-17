@@ -6,7 +6,7 @@
 }
 
 .socialMedia-section {
-    margin-top: -400px;
+    margin-top: -380px;
     display: flex;
     align-items: center;
 
@@ -62,7 +62,7 @@
     }
 }
 
-@media(min-width: 900px) and (max-width: 1450px) and (max-height: 890px) {
+@media(min-width: 900px) and (max-width: 1450px) and (max-height: 910px) {
     .socialMedia-section {
         margin-top: -80px;
     }
@@ -71,6 +71,12 @@
 @media(min-width: 900px) and (max-width: 1450px) and (max-height: 840px) {
     .socialMedia-section {
         margin-top: -50px;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1450px) and (max-height: 800px) {
+    .socialMedia-section {
+        margin-top: 15px;
     }
 }
 
