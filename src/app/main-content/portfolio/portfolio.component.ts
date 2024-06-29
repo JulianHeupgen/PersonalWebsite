@@ -33,7 +33,7 @@ export class PortfolioComponent {
       image: "elpolloloco.png"
     },
     {
-      title: "DA Bubble",
+      title: "DABubble",
       technologies: ["HTML", "SCSS", "Typescript", "Angular", "Firebase"],
       description: "Chat massenger inspired by Slack. Stay in contact with colleagues, keep up to date and share thoughts and ideas.",
       liveTest_link: "http://dabubble.julian-heupgen.de/index.html",
