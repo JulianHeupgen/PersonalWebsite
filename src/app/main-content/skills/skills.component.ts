@@ -47,6 +47,10 @@ export class SkillsComponent {
       "skill_icon": "api.png"
     },
     {
+      "skill_name": "Material",
+      "skill_icon": "material_design.png"
+    },
+    {
       "skill_name": "SCRUM",
       "skill_icon": "scrum.png"
     },
@@ -61,10 +65,6 @@ export class SkillsComponent {
     {
       "skill_name": "Django",
       "skill_icon": "django.png"
-    },
-    {
-      "skill_name": "Material Design",
-      "skill_icon": "material_design.png"
     }
   ];
 
