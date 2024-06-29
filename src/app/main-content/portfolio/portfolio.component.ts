@@ -36,9 +36,9 @@ export class PortfolioComponent {
       title: "DA Bubble",
       technologies: ["HTML", "SCSS", "Typescript", "Angular", "Firebase"],
       description: "Chat massenger inspired by Slack. Stay in contact with colleagues, keep up to date and share thoughts and ideas.",
-      liveTest_link: "",
-      gitHub_link: "",
-      image: "ComingSoon.png"
+      liveTest_link: "http://dabubble.julian-heupgen.de/dabubble/index.html",
+      gitHub_link: "https://github.com/JulianHeupgen/DABubble",
+      image: "dabubble.png"
     },
 
   ];

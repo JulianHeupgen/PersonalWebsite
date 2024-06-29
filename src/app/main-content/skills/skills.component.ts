@@ -51,10 +51,21 @@ export class SkillsComponent {
       "skill_icon": "scrum.png"
     },
     {
+      "skill_name": "Linux",
+      "skill_icon": "linux.png"
+    },
+    {
+      "skill_name": "Python",
+      "skill_icon": "python.png"
+    },
+    {
+      "skill_name": "Django",
+      "skill_icon": "django.png"
+    },
+    {
       "skill_name": "Material Design",
       "skill_icon": "material_design.png"
     }
-
   ];
 
 
